@@ -1,14 +1,15 @@
 <?php
-$root = $_SERVER['DOCUMENT_ROOT'];
-$path = $root."/RIT VSA/img/";
-$filenames = scandir($path);
-$names = array();
-$i = 0;
-foreach($filenames as $name){
-  $found = stripos($name, ".jpg");
-  if($found){
-    $names[$i] = $name;
-    $i++;
+function getImagesinFolder($path){
+  $files = scandir($path);
+  $images = array();
+  $i = 0;
+  foreach($files as $image){
+    $found = stripos($image, ".jpg");
+    if($found){
+      $images[$i] = $image;
+      $i++;
+    }
   }
+  return $images;
 }
  ?>

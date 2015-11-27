@@ -118,9 +118,6 @@
             <li><a href="event.php">Event</a></li>
             <li><a href="gallery.php">Gallery</a></li>
             <li><a href="contact.php">Contact</a></li>
-            <li><a href="search.php">
-              <span class="glyphicon glyphicon-search"></span>
-            </a></li>
           </ul>
         </div>
       </div>
